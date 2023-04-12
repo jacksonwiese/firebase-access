@@ -6,16 +6,24 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
+    @ObservedObject var model = ViewModels()
+    
+        
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        //excellent for settings page
+    
+        List(model.list) {//list of model classes / ids categories
+            item in
+            
+            Text(item.category)
         }
-        .padding()
+    }//var body ends here
+    
+    init() {
+        model.getData()
     }
 }
 
