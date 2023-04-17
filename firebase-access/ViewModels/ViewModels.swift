@@ -12,6 +12,24 @@ import Firebase
 class ViewModels: ObservableObject { //observable object makes the instance viewable
     @Published var list = [Lesson]()
     
+    //this is the function for addinf data
+    func addData(id: Int, category: String, time: String) {
+        //get a reference to the database
+        let db = Firestore.firestore()
+        
+        //add document to collection
+        db.collection("lesson").addDocument(data: ["id": id, "category": category, "time": time]) {
+            error in
+            if error == nil {
+                self.getData()
+            } else {
+                //throws an error here and record it
+                Print(Text("error in adding data"))
+            }
+        }
+    }
+    
+    
     //write function to fetch data from DB
     func getData() {
         //create database

@@ -9,9 +9,7 @@ import Foundation
 
 //iudentifiable will be recongzied both otehr classes
 struct Lesson: Identifiable {
-    
     var docid: String
-    
     var id: Int
     var category: String
     var time: String

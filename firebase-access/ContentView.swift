@@ -10,7 +10,9 @@ import Firebase
 
 struct ContentView: View {
     @ObservedObject var model = ViewModels()
-    
+    @State var id = ""
+    @State var category = ""
+    @State var time = ""
         
     var body: some View {
         //excellent for settings page
