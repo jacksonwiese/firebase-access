@@ -22,7 +22,15 @@ struct ContentView: View {
             List(model.list) {//list of model classes / ids categories
                 item in
                 
-                Text(item.category)
+                HStack{
+                    Text(item.category)
+                    Spacer()
+                    Button(action: {
+                        model.deleteData(lessonToDelete: item)
+                    }) {
+                        Image(systemName: "trash")
+                    }
+                }
             }
         }
         
@@ -31,7 +39,6 @@ struct ContentView: View {
         //for elements the user wants to add
         VStack(spacing: 5) {
             TextField("ID: ", text:$id)
-                .keyboardType(.numberPad)
             TextField("category: ", text:$category)
             TextField("time: ", text:$time)
             
@@ -49,6 +56,7 @@ struct ContentView: View {
             }
             
         }
+        .padding()
         
     }//var body ends here
     
