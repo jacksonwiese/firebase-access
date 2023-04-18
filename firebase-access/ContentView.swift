@@ -21,26 +21,33 @@ struct ContentView: View {
         VStack{
             List(model.list) {//list of model classes / ids categories
                 item in
-                
-                HStack{
+                HStack {
                     Text(item.category)
                     Spacer()
                     Button(action: {
-                        model.deleteData(lessonToDelete: item)
-                    }) {
+                        model.deleteData(lessonToDelete: item, listNumber: model.list.count)
+                    }, label: {
                         Image(systemName: "trash")
-                    }
+                    })
+                    
+                    
                 }
             }
+            
+            //                .onDelete { indexSet in
+            //                    for index in IndexSet {
+            //                        self.model.deleteData(lessonToDelete: index)
         }
-        
         Divider()
         
         //for elements the user wants to add
         VStack(spacing: 5) {
             TextField("ID: ", text:$id)
+                .keyboardType(.default)
             TextField("category: ", text:$category)
+                .keyboardType(.default)
             TextField("time: ", text:$time)
+                .keyboardType(.default)
             
             Button(action: {
                 //call app data
@@ -70,3 +77,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

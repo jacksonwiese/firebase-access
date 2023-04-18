@@ -13,14 +13,15 @@ class ViewModels: ObservableObject { //observable object makes the instance view
     @Published var list = [Lesson]()
     
     //delete data
-    func deleteData(lessonToDelete: Lesson) {
+    func deleteData(lessonToDelete: Lesson, listNumber: String) {
         //get a reference to the database
         let db = Firestore.firestore()
-        
+
+        let numberToRemove = IndexSet([listNumber])
         //specify what we want to delete
         db.collection("lesson").document().delete { error in
             if error == nil {
-                self.list.removeAll {lesson in
+                self.list.remove(atOffsets: numberToRemove) {lesson in
                     return lesson.docid == lessonToDelete.docid
                 }
             } else {
@@ -28,6 +29,20 @@ class ViewModels: ObservableObject { //observable object makes the instance view
             }
         }
     }
+    
+//    func deleteData(docId: String) {
+//        //get a reference to the database
+//        let db = Firestore.firestore()
+//
+//        //specify what we want to delete
+//        db.collection("lesson").document(docId).delete { error in
+//            if error == nil {
+//                self.list.remove(at: Lesson)
+//            } else {
+//                //record the error if you wish
+//            }
+//        }
+//    }
     
     
     //this is the function for adding data
