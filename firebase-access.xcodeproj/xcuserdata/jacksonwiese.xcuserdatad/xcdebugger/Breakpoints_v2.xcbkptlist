@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "30AC984A-A006-4868-84AE-DE03D0E2BA1C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BDDDD7A-47B1-423E-B1B0-8CAFF91F86C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "firebase-access/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "8BDDDD7A-47B1-423E-B1B0-8CAFF91F86C1 - 1a5670cbf2288350"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;firebase_access.Lesson&gt;, Swift.Int, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.buttonStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PrimitiveButtonStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt;)&gt;&gt;&gt;&gt; in firebase_access.ContentView.body.getter : some"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/firebase-access/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "8BDDDD7A-47B1-423E-B1B0-8CAFF91F86C1 - a27d6193f016fb72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (firebase_access.Lesson) -&gt; SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.buttonStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PrimitiveButtonStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt;)&gt;&gt; in closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;firebase_access.Lesson&gt;, Swift.Int, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.buttonStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PrimitiveButtonStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt;)&gt;&gt;&gt;&gt; in firebase_access.ContentView.body.getter : some"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/firebase-access/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "404">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CFD052D6-0C41-4110-8A6A-EDFAD0825DCF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "firebase-access/ViewModels/ViewModels.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewModels"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "CFD052D6-0C41-4110-8A6A-EDFAD0825DCF - 1fbcd9e835d4e3a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of firebase_access.ViewModels.list : Swift.Array&lt;firebase_access.Lesson&gt;"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/firebase-access/ViewModels/ViewModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "CFD052D6-0C41-4110-8A6A-EDFAD0825DCF - b8ae6d859c6b2ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "firebase_access.ViewModels.list.getter : Swift.Array&lt;firebase_access.Lesson&gt;"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/firebase-access/ViewModels/ViewModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "CFD052D6-0C41-4110-8A6A-EDFAD0825DCF - fc6aabd052bdf6c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "firebase_access.ViewModels.list.setter : Swift.Array&lt;firebase_access.Lesson&gt;"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/firebase-access/ViewModels/ViewModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "CFD052D6-0C41-4110-8A6A-EDFAD0825DCF - 49cd6b04e33311d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "firebase_access.ViewModels.list.modify : Swift.Array&lt;firebase_access.Lesson&gt;"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/firebase-access/ViewModels/ViewModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "CFD052D6-0C41-4110-8A6A-EDFAD0825DCF - b4d5977a2ba12006"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "firebase_access.ViewModels.list.modify : Swift.Array&lt;firebase_access.Lesson&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/firebase-access/ViewModels/ViewModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "CFD052D6-0C41-4110-8A6A-EDFAD0825DCF - 91542e58486e4eb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "firebase_access.ViewModels.$list.getter : Combine.Published&lt;Swift.Array&lt;firebase_access.Lesson&gt;&gt;.Publisher"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/firebase-access/ViewModels/ViewModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "CFD052D6-0C41-4110-8A6A-EDFAD0825DCF - 91542e58486e4eb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "firebase_access.ViewModels.$list.setter : Combine.Published&lt;Swift.Array&lt;firebase_access.Lesson&gt;&gt;.Publisher"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/firebase-access/ViewModels/ViewModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "CFD052D6-0C41-4110-8A6A-EDFAD0825DCF - eb0645ad7c8d8252"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "firebase_access.ViewModels.$list.modify : Combine.Published&lt;Swift.Array&lt;firebase_access.Lesson&gt;&gt;.Publisher"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "CFD052D6-0C41-4110-8A6A-EDFAD0825DCF - db686a9cf01fb357"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "firebase_access.ViewModels.$list.modify : Combine.Published&lt;Swift.Array&lt;firebase_access.Lesson&gt;&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/firebase-access/ViewModels/ViewModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "CFD052D6-0C41-4110-8A6A-EDFAD0825DCF - 60f2f1ddabda0141"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "firebase_access.ViewModels.init() -&gt; firebase_access.ViewModels"
+                  moduleName = "firebase-access"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacksonwiese/Documents/firebase-access/firebase-access/ViewModels/ViewModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
