@@ -25,9 +25,9 @@ struct ContentView: View {
                     Text(item.category)
                     Spacer()
                     Button(action: {
-                        model.deleteData(lessonToDelete: item, listNumber: model.list.count)
+                        model.deleteData(lessonToDelete: item)
                     }, label: {
-                        Image(systemName: "trash")
+                        Image(systemName: "trash").buttonStyle(BorderedButtonStyle())
                     })
                     
                     
@@ -48,19 +48,29 @@ struct ContentView: View {
                 .keyboardType(.default)
             TextField("time: ", text:$time)
                 .keyboardType(.default)
-            
-            Button(action: {
-                //call app data
-                model.addData(id: Int(id) ?? 0, category: category, time: time)
-                
-                //clear field
-                id = ""
-                category = ""
-                time = ""
-                
-            }) {
-                Text("Upload")
+
+            HStack{
+                Button(action: {
+                    //call app data
+                    model.addData(id: Int(id) ?? 0, category: category, time: time)
+                    
+                    //clear field
+                    id = ""
+                    category = ""
+                    time = ""
+                    
+                }) {
+                    Text("Upload")
+                }
+                Spacer()
+                Button(action: {
+                    print("let's get this running")
+                    //model.updateData(lessonToModify: id: id, category: category, time: time)
+                }, label: {
+                    Text("Modify")
+                })
             }
+            
             
         }
         .padding()
@@ -70,6 +80,7 @@ struct ContentView: View {
     init() {
         model.getData()
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
