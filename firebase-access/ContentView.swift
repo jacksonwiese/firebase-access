@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Firebase
+import Foundation
 
 struct ContentView: View {
     
@@ -17,68 +18,73 @@ struct ContentView: View {
     
     var body: some View {
         //excellent for settings page
-        
-        VStack{
-            List(model.list) {//list of model classes / ids categories
-                item in
-                HStack {
-                    Text(item.category)
+        NavigationView {
+            
+            
+            Section {
+                VStack{
+                    List(model.list) { item in //list of model classes / ids categories
+                        Text(item.category)
+                            .swipeActions {
+                                Button {
+                                    //Delete
+                                } label: {
+                                    Text("Delete")
+                                        .background(Color.red)
+                                }
+                            }
+                    }
+                    //.onDelete(perform: deleteItem)
+                    //  model.deleteData(docid: item.docid)
+                }
+            }
+            
+            Divider()
+            
+            //for elements the user wants to add
+            VStack(spacing: 5) {
+                TextField("ID: ", text:$id)
+                    .keyboardType(.default)
+                TextField("category: ", text:$category)
+                    .keyboardType(.default)
+                TextField("time: ", text:$time)
+                    .keyboardType(.default)
+                
+                HStack{
+                    Button(action: {
+                        //call app data
+                        model.addData(id: Int(id) ?? 0, category: category, time: time)
+                        
+                        //clear field
+                        id = ""
+                        category = ""
+                        time = ""
+                        
+                    }) {
+                        Text("Upload")
+                    }
                     Spacer()
                     Button(action: {
-                        model.deleteData(lessonToDelete: item)
+                        print("let's get this running")
+                        //model.updateData(lessonToModify: id: id, category: category, time: time)
                     }, label: {
-                        Image(systemName: "trash").buttonStyle(BorderedButtonStyle())
+                        Text("Modify")
                     })
-                    
-                    
                 }
+                
+                
             }
-            
-            //                .onDelete { indexSet in
-            //                    for index in IndexSet {
-            //                        self.model.deleteData(lessonToDelete: index)
+            .padding()
         }
-        Divider()
-        
-        //for elements the user wants to add
-        VStack(spacing: 5) {
-            TextField("ID: ", text:$id)
-                .keyboardType(.default)
-            TextField("category: ", text:$category)
-                .keyboardType(.default)
-            TextField("time: ", text:$time)
-                .keyboardType(.default)
-
-            HStack{
-                Button(action: {
-                    //call app data
-                    model.addData(id: Int(id) ?? 0, category: category, time: time)
-                    
-                    //clear field
-                    id = ""
-                    category = ""
-                    time = ""
-                    
-                }) {
-                    Text("Upload")
-                }
-                Spacer()
-                Button(action: {
-                    print("let's get this running")
-                    //model.updateData(lessonToModify: id: id, category: category, time: time)
-                }, label: {
-                    Text("Modify")
-                })
-            }
-            
-            
-        }
-        .padding()
         
     }//var body ends here
     
     init() {
         model.getData()
+    }
+    
+    func deleteItem(at offsets: IndexSet) {
+        model.deleteData(atOffsets: offsets)
     }
     
 }
